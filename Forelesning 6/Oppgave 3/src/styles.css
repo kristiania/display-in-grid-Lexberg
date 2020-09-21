@@ -1,9 +1,148 @@
+.grid-container{
+    background-color: #ffffff;
+    padding: 7px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 3px;
+    justify-content: center; 
+    
+
+}
+
+.grid-item {
+    columns: #111111;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+@media only screen and (min-width: 375px){
 /* For mobile phones: */
+
+
+*{
+    font-family: Arial ;
+}
+
+#header {
+    
+    grid-row: 1;
+    background-color:darkgray;
+    border-radius: 7px;
+}
+
+#sidebar {
+    grid-row:2;
+    background-color: gray;
+    border-radius: 7px;
+
+}
+
+#content{
+    grid-row: 3;
+    background-color:gray;
+    border-radius: 7px;
+}
+
+#sidebar2{
+    grid-row: 4;
+    background-color: lightgrey;
+    border-radius: 7px;
+}
+
+
+#footer{
+    grid-row:5;
+    background-color: darkgray;
+    border-radius: 7px;
+}
+}
   
 @media only screen and (min-width: 600px) {
 /* For tablets: */
+*{
+    font-family: Arial ;
+}
+
+#header {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+    background-color:darkgray;
+    border-radius: 7px;
+}
+
+#sidebar {
+    grid-column: 1;
+    grid-row:2;
+    background-color: gray;
+    border-radius: 7px;
+
+}
+
+#content{
+    grid-column: 2 / span 3;
+    grid-row: 2;
+    background-color:gray;
+    border-radius: 7px;
+}
+
+#sidebar2{
+    grid-column: 1 / span 4;
+    grid-row: 4;
+    background-color: lightgrey;
+    border-radius: 7px;
+}
+
+
+#footer{
+    grid-column: 1 / span 4;
+    grid-row:5;
+    background-color: darkgray;
+    border-radius: 7px;
 }
 
 @media only screen and (min-width: 768px) {
 /* For desktop: */
+*{
+    font-family: Arial ;
+}
+
+#header {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+    background-color:darkgray;
+    border-radius: 7px;
+}
+
+#sidebar {
+    grid-column: 1;
+    grid-row:2;
+    background-color: gray;
+    border-radius: 7px;
+
+}
+
+#content{
+    grid-column: 2 / span 2;
+    grid-row: 2;
+    background-color:gray;
+    border-radius: 7px;
+}
+
+#sidebar2{
+    grid-column: 4 / span 1;
+    grid-row: 2;
+    background-color: lightgrey;
+    border-radius: 7px;
+}
+
+
+#footer{
+    grid-column: 1 / span 4;
+    grid-row:5;
+    background-color: darkgray;
+    border-radius: 7px;
+
+}
+}
 }
